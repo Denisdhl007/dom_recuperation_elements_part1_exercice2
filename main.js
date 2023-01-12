@@ -19,15 +19,23 @@ console.log(myBody[0].lastElementChild);
 let exo4 = document.getElementsByTagName("div")[0].children;
 console.log(exo4);
 
-// // ### 5. Récupère le premier li, puis trouve une méthode JS pour afficher le second li et affiche le résultat dans un console.log
+// // ### 5. Récupère le premier li de la liste Ol, puis trouve une méthode JS pour afficher le second li et affiche le résultat dans un console.log
 
-// let li = document.getElementsByTagName("li");
-// console.log(li[1]);
+let li = document.getElementsByTagName("ol")[0].getElementsByTagName("li");
+console.log(li[1]);
 
-var li = document.getElementsByTagName("li");
+// ou
+
+let li = document.getElementsByTagName("li");
+console.log(li[1]);
+
+// ou
+
+let li = document.getElementsByTagName("li");
 console.log(li[0].nextElementSibling);
 console.log(li[0].firstElementChild);
 
 // // ### 6. Récupère le second élément puis trouve une méthode JS pour afficher l'élément précédant( c'est a dire le premier li ) et affiche le résultat dans un CL
 
-
+var li = document.getElementsByTagName("ol")[0].getElementsByTagName("li");
+console.log(li[0]);
